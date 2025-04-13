@@ -5,7 +5,7 @@ Small wrapper for https://github.com/nozzlegear/dotenvfile to work with [vvvv-ga
 ### Installation
 
 ```sh
-TODO: NUGET
+nuget install VL.IO.DotEnvFile
 ```
 
 ### About
