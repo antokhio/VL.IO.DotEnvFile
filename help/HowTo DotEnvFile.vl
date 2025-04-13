@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="Q5C1EM6AVRvOeenXrGmy8H" LanguageVersion="2025.7.0-0310-gb23441fc56" Version="0.128">
+  <NugetDependency Id="L2MU5lvnsqaNEdWRIbx3Lr" Location="VL.CoreLib" Version="2025.7.0-0310-gb23441fc56" />
+  <Patch Id="IcQcRNXqjMXOFXJ5HUIQLq">
+    <Canvas Id="EcmPYpAmOcQL1gMmgYfdT3" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="MKDQ1Ia4Z0vM16UQ4PCDyh">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Uy9x3wU4vHbNeVP4yppBQT">
+        <Canvas Id="QWWZhfuZqfsLiG8okQIHPv" CanvasType="Group">
+          <Node Bounds="327,270,80,19" Id="MtIZemHY5auM0waHFvjTnf">
+            <p:NodeReference LastCategoryFullName="IO.DotEnvFile" LastDependency="VL.IO.DotEnvFile.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DotEnvReader" />
+            </p:NodeReference>
+            <Pin Id="PbfYyLb9m5BPFex3wB9WuV" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BGEhDIwS6fnN2CEfWOR9QY" Name="Path" Kind="InputPin" DefaultValue="assets\.env" />
+            <Pin Id="IA6zKPaUWkfLfl3YfhbbaB" Name="Output" Kind="OutputPin" />
+            <Pin Id="UExYLRHkgUDM5KKyzg3J4Z" Name="Read" Kind="InputPin" DefaultValue="False" />
+          </Node>
+          <Pad Id="U9cCIs8YfV1QLQ85s1sWXe" Comment="Path" Bounds="329,199,140,15" ShowValueBox="true" isIOBox="true" Value="..\assets\.env">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="BhEhclDRiygN6obGja1WWi" Bounds="329,330" />
+          <Pad Id="QfOKkPlyYMfL5ikkPIPr2S" Comment="" Bounds="329,359,158,111" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="EErhtD88UDEOsSsH4DgiV1" Name="Create" />
+        <Patch Id="JEGsN9nwl2WQCLTaTJlo5x" Name="Update" ParticipatingElements="HWbX8arFmkoLlzf7zXBwk1" />
+        <ProcessDefinition Id="R1MjPbFPXd0Pch2gqeVViw">
+          <Fragment Id="EWRB7njDNwDMmVhvP4uSVE" Patch="EErhtD88UDEOsSsH4DgiV1" Enabled="true" />
+          <Fragment Id="FnbccSTxSfOL55xG2VvfsS" Patch="JEGsN9nwl2WQCLTaTJlo5x" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="JGhPxEsqfx8Ni0LBhzLuHJ" Ids="U9cCIs8YfV1QLQ85s1sWXe,BGEhDIwS6fnN2CEfWOR9QY" />
+        <Link Id="HWbX8arFmkoLlzf7zXBwk1" Ids="IA6zKPaUWkfLfl3YfhbbaB,BhEhclDRiygN6obGja1WWi" />
+        <Link Id="SY9xCaDoXA6NjHF5BBjM0l" Ids="BhEhclDRiygN6obGja1WWi,QfOKkPlyYMfL5ikkPIPr2S" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="Mi75xl30xOtLJeaFaFWT7R" Location="../VL.IO.DotEnvFile.vl" />
+</Document>
