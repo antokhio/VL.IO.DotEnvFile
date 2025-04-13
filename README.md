@@ -20,7 +20,7 @@ The original [DotEnvFile](https://github.com/nozzlegear/dotenvfile) provides met
 ```cs
 DotEnvFile.InjectIntoEnvironment(System.EnvironmentVariableTarget.Process, variables);
 ```
-Witch were not including in initial release. If `one` would like to include this, we would gladly accept `PR's` starting with `feat/` feature, or `fix/` bugfix`
+Witch were not including in initial release. If `one` would like to include this, we would gladly accept `PR's` starting with `feat/` feature, or `fix/` for a bug fix.
 
 ### Credits
 
