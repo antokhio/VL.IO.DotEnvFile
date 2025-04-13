@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VL.IO.DotEnvFile</id>
+    <version>{{ VERSION }}</version>
+    <title>VL.IO.DotEnvFile</title>
+    <authors>antokhio</authors>
+    <owners>antokhio</owners>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/antokhio/VL.IO.DotEnvFile</projectUrl>
+    <summary>Small wrapper for https://github.com/nozzlegear/dotenvfile to work with vvvv-gamma</summary>
+    <description>Small wrapper for https://github.com/nozzlegear/dotenvfile to work with vvvv-gamma</description>
+    <copyright>Copyright © 2025 antokhio</copyright>
+    <tags>VL, vvvv, .env</tags>
+    <dependencies>
+      <dependency id="DotEnvFile" version="2.1.0" />
+    </dependencies>
+  </metadata>
+   <files>
+    <file src="..\*.vl"/>
+    <file src="..\help\*.vl" target="help"/>
+    <file src="..\README.md" />
+    <file src="..\LICENSE" />
+  </files>
+</package>
