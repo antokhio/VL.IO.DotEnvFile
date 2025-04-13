@@ -19,7 +19,7 @@ jobs:
       - name: Patch Version from tag
         run: |
           cd .nuget
-          .\patch-version.cmd "VL.IO.DotEnvFile" "${{ github.ref_name }}"
+          .\patch-version.cmd "VL.IO.DotEnvFile.nuspec" "${{ github.ref_name }}"
           cd ..
 
       - name: Publish VL Nuget
