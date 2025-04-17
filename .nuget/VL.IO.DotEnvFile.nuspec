@@ -16,6 +16,7 @@
     <tags>VL, vvvv, .env</tags>
     <dependencies>
       <dependency id="DotEnvFile" version="2.1.0" />
+      <dependency id="FSharp.Core" version="8.0.403" />
     </dependencies>
   </metadata>
    <files>
